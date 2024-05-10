@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Search Results</title>
+    <link rel="stylesheet" href="resume-style.css">
+</head>
+
+<body>
+    <div id="search-data">
+        <button id="previousButton" onclick="prevData()">Previous</button>
+        <input type="text" id="searchData" placeholder="Search by Job Title" oninput="searchResume()">
+        <button id="nextButton" onclick="nextData()">Next</button>
+    </div>
+    <div class="error-block">
+        <div class="popup">
+            <a href="resumes.html" class="close">&times;</a>
+            <img id="emoji" src="Images/frown.png"></img>
+            <h1>Sorry! Could not get any such Resume</h1>
+        </div>
+    </div>
+    <script src="resume-script.js"></script>
+</body>
+
+</html>
